@@ -1,0 +1,70 @@
+TMS :                           |   TMS/SWD / Pull up?   (Example schematics)
+P0.0: JTAG CLK                  |   JTAG_CLK/ Pull down?
+P0.1: MRST_1_2 SSC1             |   MISO1   / I2C SDC / Disp_A 
+P0.2: CCPOS2_1 / MTSR_1 SSC1    |   MOSI1   / I2C SDA / Pull down? (Page 124 User manual) / Disp_B
+P0.3: SCK_1 SSC1 / CCPOS0_1     |   SCK_1   / Disp_I
+P0.4: MRST_1_0 SSC1 / CCPOS1_1  |   HALL_1
+        
+P1.0: SCK_2 SSC2                |   SCK2
+P1.1: MTSR_2 SSC2               |   MOSI2
+P1.2: MRST_2_0 SSC2 / CCPOS2_2  |   MISO2
+P1.3: CCPOS0_2                  |   
+P1.4: CCPOS1_2 / MRST_1_3 SSC1  |   HALL_2
+
+P2.0: CCPOS0_3                  |   ENC_A   
+P2.2: CCPOS2_3                  |   TEMP
+P2.3: CCPOS1_0                  |   HALL_3
+P2.4: MRST_1_1 SSC1             |   ENC_B
+P2.5: MRST_2_1 SSC2             |   ENC_I   / Disp_Ao
+
+
+Connectors:
+
+#PWR (2): Wago SMD
+#Motor_phases (3): Wago SMD?
+#Hall sensors (5):
+    -Vdd_ext
+    -GND
+    -H1
+    -H2
+    -H3
+
+#Encoder (10):  https://media.digikey.com/pdf/Data%20Sheets/Hirose%20PDFs/DF20%20Series.pdf
+                https://www.digikey.com/product-detail/en/hirose-electric-co-ltd/DF20F-10DP-1H(50)/H12155-ND/1874637
+    -A-
+    -A+
+    -B-
+    -B+
+    -I-
+    -I+
+    -Vcc
+    -GND
+    (M+/Nc)
+    (M-/Nc)
+
+#Displacement (6):
+    -A
+    -B
+    -I
+    -Ao
+    -5V
+    -GND
+
+#I2C (4):
+    -5V
+    -SDA
+    -SDC
+    -GND
+
+#SPI (4-6):
+    -MOSI
+    -MISO
+    -SCK
+    (-SS)
+    (-GND)
+
+#JTAG (4):
+    -SWCLK
+    -SWD/TMS
+    -RST
+    -GND
