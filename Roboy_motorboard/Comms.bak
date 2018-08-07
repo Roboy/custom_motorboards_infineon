@@ -5,11 +5,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 4
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "Communication Interfaces And Peripherals"
+Date "2018-06-26"
+Rev "A"
+Comp "Roboy"
+Comment1 "Luis Vergara"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -594,7 +594,7 @@ Wire Wire Line
 Wire Wire Line
 	8350 4450 8350 4000
 Wire Wire Line
-	8350 4000 7650 4000
+	8350 4000 7750 4000
 Connection ~ 7650 4000
 Wire Wire Line
 	8200 4250 8750 4250
@@ -641,14 +641,8 @@ Wire Wire Line
 	9150 4600 9150 4550
 Wire Wire Line
 	8450 4150 8750 4150
-Text Label 10200 4150 2    60   ~ 0
-MISO1/DispA
-Text Label 10450 4350 2    60   ~ 0
+Text Label 10400 4150 2    60   ~ 0
 MOSI1/SDA/DispB
-Wire Wire Line
-	9550 4150 10200 4150
-Wire Wire Line
-	10450 4350 9550 4350
 $Comp
 L device1:R R32
 U 1 1 5A31CE18
@@ -1002,4 +996,15 @@ Wire Wire Line
 Wire Wire Line
 	5200 4200 5200 4350
 Connection ~ 5200 4350
+Text HLabel 9600 4350 2    60   Input ~ 0
+SCK1/SCL/DispI
+Wire Wire Line
+	7750 4050 7750 4000
+Connection ~ 7750 4000
+Wire Wire Line
+	7750 4000 7650 4000
+Wire Wire Line
+	10400 4150 9550 4150
+Wire Wire Line
+	9550 4350 9600 4350
 $EndSCHEMATC

@@ -5,11 +5,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "Roboy Motor Controller Board"
+Date "2018-06-26"
+Rev "A"
+Comp "Roboy"
+Comment1 "Luis Vergara"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -1034,12 +1034,12 @@ Wire Wire Line
 Wire Wire Line
 	10050 3500 10450 3500
 $Comp
-L Device:Net-Tie_2 NT?
+L Device:Net-Tie_2 NT1
 U 1 1 5B24D706
 P 6800 5650
-F 0 "NT?" H 6800 5828 50  0000 C CNN
+F 0 "NT1" H 6800 5828 50  0000 C CNN
 F 1 "Net-Tie_2" H 6800 5737 50  0000 C CNN
-F 2 "" H 6800 5650 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 6800 5650 50  0001 C CNN
 F 3 "" H 6800 5650 50  0001 C CNN
 	1    6800 5650
 	1    0    0    -1  
@@ -1048,10 +1048,10 @@ Wire Wire Line
 	6900 5650 7150 5650
 Connection ~ 7150 5650
 $Comp
-L power1:GNDA #PWR?
+L power1:GNDA #PWR035
 U 1 1 5B25753F
 P 6450 5800
-F 0 "#PWR?" H 6450 5550 50  0001 C CNN
+F 0 "#PWR035" H 6450 5550 50  0001 C CNN
 F 1 "GNDA" H 6450 5650 50  0000 C CNN
 F 2 "" H 6450 5800 50  0001 C CNN
 F 3 "" H 6450 5800 50  0001 C CNN
