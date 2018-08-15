@@ -1,4 +1,4 @@
-     TMS :                           |   TMS/SWD / Pull down   (Demo board schematics -> Pull up?)
+TMS :                           |   TMS/SWD / Pull down   (Demo board schematics -> Pull up?)
 P0.0: JTAG CLK                  |   JTAG_CLK/ SS1        (Demo board schematics -> Pull down?)
 P0.1: MRST_1_2 SSC1             |   MISO1   / Disp_A 
 P0.2: CCPOS2_1 / MTSR_1 SSC1    |   MOSI1   / I2C SDA / Pull down (Page 124 User manual) / Disp_B

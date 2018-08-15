@@ -214,10 +214,6 @@ Wire Wire Line
 Wire Wire Line
 	7050 2550 7250 2550
 Wire Wire Line
-	6450 2450 7250 2450
-Wire Wire Line
-	6700 2350 7250 2350
-Wire Wire Line
 	6400 2250 7250 2250
 Wire Wire Line
 	7050 2150 7250 2150
@@ -404,11 +400,11 @@ $EndComp
 Text HLabel 1650 6500 0    60   Input ~ 0
 MISO1/DispA
 Wire Wire Line
-	2750 6600 3400 6600
+	2750 6600 3650 6600
 Text HLabel 1650 6800 0    60   Input ~ 0
 MOSI1/SDA/DispB
 Wire Wire Line
-	2750 6800 3650 6800
+	2750 6800 3850 6800
 Wire Wire Line
 	1650 6500 1750 6500
 Wire Wire Line
@@ -417,14 +413,10 @@ Wire Wire Line
 	1650 6600 1750 6600
 Wire Wire Line
 	1650 6900 1750 6900
-Text Label 6700 2350 0    60   ~ 0
-MISO1/DispA
-Text Label 6450 2450 0    60   ~ 0
-MOSI1/SDA/DispB
-Text Label 3400 6600 2    60   ~ 0
-MISO1/DispA
-Text Label 3650 6800 2    60   ~ 0
-MOSI1/SDA/DispB
+Text Label 3650 6600 2    60   ~ 0
+MISO1/DispA-TMS
+Text Label 3850 6800 2    60   ~ 0
+MOSI1/SDA/DispB-RST
 Wire Wire Line
 	2250 6150 2250 6300
 Wire Wire Line
@@ -1007,4 +999,12 @@ Wire Wire Line
 	10400 4150 9550 4150
 Wire Wire Line
 	9550 4350 9600 4350
+Text Label 6450 2350 0    60   ~ 0
+MISO1/DispA-TMS
+Text Label 6200 2450 0    60   ~ 0
+MOSI1/SDA/DispB-RST
+Wire Wire Line
+	6450 2350 7250 2350
+Wire Wire Line
+	6200 2450 7250 2450
 $EndSCHEMATC
