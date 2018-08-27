@@ -5,11 +5,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "Roboy Motor Controller Board"
+Date "2018-06-26"
+Rev "A"
+Comp "Roboy"
+Comment1 "Luis Vergara"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -404,11 +404,11 @@ RST
 Text Label 8050 2550 2    60   ~ 0
 RST
 Text Label 8300 2600 0    60   ~ 0
-P0.4
+P1.3
 Text Label 8300 2700 0    60   ~ 0
-P1.4
+P0.4
 Text Label 8300 2800 0    60   ~ 0
-P2.3
+P2.2
 Text Label 8300 3600 0    60   ~ 0
 P1.0
 Text Label 8300 3700 0    60   ~ 0
@@ -416,7 +416,7 @@ P1.1
 Text Label 8300 3800 0    60   ~ 0
 P1.2
 Text Label 8300 3900 0    60   ~ 0
-P1.3
+P1.4
 Text Label 6150 1950 3    60   ~ 0
 Vdd_Ext
 Text Label 10450 3900 2    60   ~ 0
@@ -605,18 +605,11 @@ Wire Wire Line
 	10050 3400 10450 3400
 Wire Wire Line
 	9300 1000 9300 850 
-Wire Wire Line
-	6700 3950 6900 3950
-Connection ~ 7400 4250
-Wire Wire Line
-	7400 3850 7400 4250
 Connection ~ 6950 4650
 Wire Wire Line
 	7950 4650 7950 4250
 Wire Wire Line
 	7950 4250 7800 4250
-Wire Wire Line
-	7350 4250 7400 4250
 Connection ~ 6950 4250
 Wire Wire Line
 	8300 3200 8550 3200
@@ -655,8 +648,6 @@ Wire Wire Line
 	6700 4150 6900 4150
 Wire Wire Line
 	6700 4050 6900 4050
-Wire Wire Line
-	6700 3850 7400 3850
 Wire Wire Line
 	6700 3750 6900 3750
 Wire Wire Line
@@ -879,8 +870,6 @@ Wire Wire Line
 Wire Wire Line
 	7550 2950 7550 3000
 Wire Wire Line
-	7400 4250 7500 4250
-Wire Wire Line
 	6950 4650 7300 4650
 Wire Wire Line
 	6950 4250 7050 4250
@@ -1062,4 +1051,15 @@ Wire Wire Line
 	6450 5800 6450 5650
 Wire Wire Line
 	6450 5650 6700 5650
+Wire Wire Line
+	7350 4250 7400 4250
+Wire Wire Line
+	7400 4250 7400 3950
+Wire Wire Line
+	6700 3950 7400 3950
+Connection ~ 7400 4250
+Wire Wire Line
+	7400 4250 7500 4250
+Wire Wire Line
+	6700 3850 6900 3850
 $EndSCHEMATC

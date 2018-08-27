@@ -5,11 +5,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 4
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "Driver Bridge"
+Date "2018-06-26"
+Rev "A"
+Comp "Roboy"
+Comment1 "Luis Vergara"
 Comment2 ""
 Comment3 ""
 Comment4 ""
