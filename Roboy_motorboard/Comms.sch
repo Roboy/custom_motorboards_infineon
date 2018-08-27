@@ -5,11 +5,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 4
-Title "Communication Interfaces And Peripherals"
-Date "2018-06-26"
-Rev "A"
-Comp "Roboy"
-Comment1 "Luis Vergara"
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -214,6 +214,10 @@ Wire Wire Line
 Wire Wire Line
 	7050 2550 7250 2550
 Wire Wire Line
+	6450 2450 7250 2450
+Wire Wire Line
+	6700 2350 7250 2350
+Wire Wire Line
 	6400 2250 7250 2250
 Wire Wire Line
 	7050 2150 7250 2150
@@ -400,11 +404,11 @@ $EndComp
 Text HLabel 1650 6500 0    60   Input ~ 0
 MISO1/DispA
 Wire Wire Line
-	2750 6600 3650 6600
+	2750 6600 3400 6600
 Text HLabel 1650 6800 0    60   Input ~ 0
 MOSI1/SDA/DispB
 Wire Wire Line
-	2750 6800 3850 6800
+	2750 6800 3650 6800
 Wire Wire Line
 	1650 6500 1750 6500
 Wire Wire Line
@@ -413,10 +417,14 @@ Wire Wire Line
 	1650 6600 1750 6600
 Wire Wire Line
 	1650 6900 1750 6900
-Text Label 3650 6600 2    60   ~ 0
-MISO1/DispA-TMS
-Text Label 3850 6800 2    60   ~ 0
-MOSI1/SDA/DispB-RST
+Text Label 6700 2350 0    60   ~ 0
+MISO1/DispA
+Text Label 6450 2450 0    60   ~ 0
+MOSI1/SDA/DispB
+Text Label 3400 6600 2    60   ~ 0
+MISO1/DispA
+Text Label 3650 6800 2    60   ~ 0
+MOSI1/SDA/DispB
 Wire Wire Line
 	2250 6150 2250 6300
 Wire Wire Line
@@ -586,7 +594,7 @@ Wire Wire Line
 Wire Wire Line
 	8350 4450 8350 4000
 Wire Wire Line
-	8350 4000 7750 4000
+	8350 4000 7650 4000
 Connection ~ 7650 4000
 Wire Wire Line
 	8200 4250 8750 4250
@@ -633,8 +641,14 @@ Wire Wire Line
 	9150 4600 9150 4550
 Wire Wire Line
 	8450 4150 8750 4150
-Text Label 10400 4150 2    60   ~ 0
+Text Label 10200 4150 2    60   ~ 0
+MISO1/DispA
+Text Label 10450 4350 2    60   ~ 0
 MOSI1/SDA/DispB
+Wire Wire Line
+	9550 4150 10200 4150
+Wire Wire Line
+	10450 4350 9550 4350
 $Comp
 L device1:R R32
 U 1 1 5A31CE18
@@ -893,118 +907,187 @@ F 3 "" H 9450 1350 50  0001 C CNN
 	1    9450 1350
 	1    0    0    -1  
 $EndComp
-$Comp
-L custom:LP2951-50DRGR_WSON8 U9
-U 1 1 5B2DB2D6
-P 2950 4100
-F 0 "U9" H 2950 4442 50  0000 C CNN
-F 1 "LP2951-50DRGR_WSON8" H 2950 4351 50  0000 C CNN
-F 2 "custom_lib:PWSON-N8-1EP_3x3mm_P0.5mm" H 2950 4425 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lp2950.pdf" H 2950 4100 50  0001 C CNN
-	1    2950 4100
-	1    0    0    -1  
-$EndComp
-Text GLabel 2250 4000 0    50   Input ~ 0
+Text GLabel 1700 3850 0    50   Input ~ 0
 VDH
-Wire Wire Line
-	2250 4000 2350 4000
-Wire Wire Line
-	2550 4200 2550 4300
-Wire Wire Line
-	2950 4550 2950 4500
-Wire Wire Line
-	2550 4100 2500 4100
-Wire Wire Line
-	2500 4100 2500 4550
-Wire Wire Line
-	2500 4550 2950 4550
-Connection ~ 2950 4550
-NoConn ~ 3350 4200
-Text HLabel 3650 4000 2    60   Input ~ 0
+Text HLabel 3850 4000 2    60   Input ~ 0
 Vdd_Ext
-Wire Wire Line
-	3650 4000 3500 4000
-Wire Wire Line
-	3350 4100 3400 4100
-Wire Wire Line
-	3400 4100 3400 4000
-Connection ~ 3400 4000
-Wire Wire Line
-	3400 4000 3350 4000
-$Comp
-L device1:C_Small C40
-U 1 1 5B3089A5
-P 2350 4300
-F 0 "C40" H 2360 4370 50  0000 L CNN
-F 1 "1u" H 2450 4300 50  0000 L CNN
-F 2 "custom_lib:The_0402_FP" H 2350 4300 50  0001 C CNN
-F 3 "" H 2350 4300 50  0001 C CNN
-	1    2350 4300
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	2350 4200 2350 4000
-Connection ~ 2350 4000
-Wire Wire Line
-	2350 4000 2550 4000
-Wire Wire Line
-	2350 4400 2350 4550
-Wire Wire Line
-	2350 4550 2500 4550
-Connection ~ 2500 4550
-$Comp
-L device1:C_Small C41
-U 1 1 5B3258E0
-P 3500 4250
-F 0 "C41" H 3510 4320 50  0000 L CNN
-F 1 "1u" H 3600 4250 50  0000 L CNN
-F 2 "custom_lib:The_0402_FP" H 3500 4250 50  0001 C CNN
-F 3 "" H 3500 4250 50  0001 C CNN
-	1    3500 4250
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	3500 4150 3500 4000
-Connection ~ 3500 4000
-Wire Wire Line
-	3500 4000 3400 4000
-Wire Wire Line
-	3500 4350 3500 4550
-Wire Wire Line
-	3500 4550 2950 4550
-$Comp
-L power1:GNDD #PWR034
-U 1 1 5B34D75E
-P 2950 4650
-F 0 "#PWR034" H 2950 4400 50  0001 C CNN
-F 1 "GNDD" H 2950 4500 50  0000 C CNN
-F 2 "" H 2950 4650 50  0001 C CNN
-F 3 "" H 2950 4650 50  0001 C CNN
-	1    2950 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2950 4650 2950 4550
 Wire Wire Line
 	5200 4200 5200 4350
 Connection ~ 5200 4350
-Text HLabel 9600 4350 2    60   Input ~ 0
-SCK1/SCL/DispI
+$Comp
+L custom:AOZ1280 U9
+U 1 1 5B845080
+P 2400 4000
+F 0 "U9" H 2400 4415 50  0000 C CNN
+F 1 "AOZ1280" H 2400 4324 50  0000 C CNN
+F 2 "" H 2400 4000 50  0001 C CNN
+F 3 "http://aosmd.com/res/data_sheets/AOZ1280CI.pdf" H 2400 4000 50  0001 C CNN
+	1    2400 4000
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	7750 4050 7750 4000
-Connection ~ 7750 4000
+	1700 3850 1800 3850
 Wire Wire Line
-	7750 4000 7650 4000
+	1950 4000 1800 4000
 Wire Wire Line
-	10400 4150 9550 4150
+	1800 4000 1800 3850
+Connection ~ 1800 3850
 Wire Wire Line
-	9550 4350 9600 4350
-Text Label 6450 2350 0    60   ~ 0
-MISO1/DispA-TMS
-Text Label 6200 2450 0    60   ~ 0
-MOSI1/SDA/DispB-RST
+	1800 3850 1950 3850
+$Comp
+L power1:GNDD #PWR034
+U 1 1 5B8585C2
+P 2400 4500
+F 0 "#PWR034" H 2400 4250 50  0001 C CNN
+F 1 "GNDD" H 2400 4350 50  0000 C CNN
+F 2 "" H 2400 4500 50  0001 C CNN
+F 3 "" H 2400 4500 50  0001 C CNN
+	1    2400 4500
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6450 2350 7250 2350
+	2400 4500 2400 4450
+$Comp
+L device1:C_Small C42
+U 1 1 5B85EF94
+P 3750 4200
+F 0 "C42" H 3760 4270 50  0000 L CNN
+F 1 "10u" H 3850 4200 50  0000 L CNN
+F 2 "custom_lib:The_0402_FP" H 3750 4200 50  0001 C CNN
+F 3 "" H 3750 4200 50  0001 C CNN
+	1    3750 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L device1:C_Small C40
+U 1 1 5B85F034
+P 1800 4150
+F 0 "C40" H 1810 4220 50  0000 L CNN
+F 1 "4.7u" H 1900 4150 50  0000 L CNN
+F 2 "custom_lib:The_0402_FP" H 1800 4150 50  0001 C CNN
+F 3 "" H 1800 4150 50  0001 C CNN
+	1    1800 4150
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6200 2450 7250 2450
+	1800 4050 1800 4000
+Connection ~ 1800 4000
+$Comp
+L device1:C_Small C41
+U 1 1 5B86C895
+P 3000 3850
+F 0 "C41" H 3010 3920 50  0000 L CNN
+F 1 "10n" H 3100 3850 50  0000 L CNN
+F 2 "custom_lib:The_0402_FP" H 3000 3850 50  0001 C CNN
+F 3 "" H 3000 3850 50  0001 C CNN
+	1    3000 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky D7
+U 1 1 5B86CA0A
+P 2950 4350
+F 0 "D7" V 2900 4150 50  0000 L CNN
+F 1 "D_Schottky" V 3000 3850 50  0000 L CNN
+F 2 "" H 2950 4350 50  0001 C CNN
+F 3 "" H 2950 4350 50  0001 C CNN
+	1    2950 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L device1:L_Small L2
+U 1 1 5B86CB82
+P 3300 4000
+F 0 "L2" V 3485 4000 50  0000 C CNN
+F 1 "2.2u" V 3394 4000 50  0000 C CNN
+F 2 "" H 3300 4000 50  0001 C CNN
+F 3 "" H 3300 4000 50  0001 C CNN
+	1    3300 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2850 4000 2950 4000
+Wire Wire Line
+	3400 4000 3450 4000
+Wire Wire Line
+	2950 4200 2950 4000
+Connection ~ 2950 4000
+Wire Wire Line
+	2950 4000 3100 4000
+Wire Wire Line
+	2950 4500 2400 4500
+Connection ~ 2400 4500
+Wire Wire Line
+	1800 4500 2400 4500
+Wire Wire Line
+	1800 4250 1800 4500
+Wire Wire Line
+	3750 4500 3750 4300
+Wire Wire Line
+	3750 4100 3750 4000
+Wire Wire Line
+	3850 4000 3750 4000
+Connection ~ 3750 4000
+Wire Wire Line
+	2850 3850 2900 3850
+Wire Wire Line
+	3100 3850 3100 4000
+Connection ~ 3100 4000
+Wire Wire Line
+	3100 4000 3200 4000
+$Comp
+L Device:R_Small R29
+U 1 1 5B92B5C2
+P 3450 4100
+F 0 "R29" H 3509 4146 50  0000 L CNN
+F 1 "1k" H 3509 4055 50  0000 L CNN
+F 2 "" H 3450 4100 50  0001 C CNN
+F 3 "" H 3450 4100 50  0001 C CNN
+	1    3450 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R30
+U 1 1 5B92B784
+P 3150 4400
+F 0 "R30" H 3209 4446 50  0000 L CNN
+F 1 "820" H 3209 4355 50  0000 L CNN
+F 2 "" H 3150 4400 50  0001 C CNN
+F 3 "" H 3150 4400 50  0001 C CNN
+	1    3150 4400
+	1    0    0    -1  
+$EndComp
+Connection ~ 3450 4000
+Wire Wire Line
+	3450 4000 3750 4000
+$Comp
+L Device:R_Small R31
+U 1 1 5B969C3F
+P 3300 4250
+F 0 "R31" V 3104 4250 50  0000 C CNN
+F 1 "3.3k" V 3195 4250 50  0000 C CNN
+F 2 "" H 3300 4250 50  0001 C CNN
+F 3 "" H 3300 4250 50  0001 C CNN
+	1    3300 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2950 4500 3150 4500
+Connection ~ 2950 4500
+Wire Wire Line
+	3150 4500 3750 4500
+Connection ~ 3150 4500
+Wire Wire Line
+	3450 4200 3450 4250
+Wire Wire Line
+	3450 4250 3400 4250
+Wire Wire Line
+	3200 4250 3150 4250
+Wire Wire Line
+	3150 4250 3150 4300
+Wire Wire Line
+	3150 4250 3150 4150
+Wire Wire Line
+	3150 4150 2850 4150
+Connection ~ 3150 4250
 $EndSCHEMATC

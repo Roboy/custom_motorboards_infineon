@@ -3,17 +3,17 @@ P0.0: JTAG CLK                  |   JTAG_CLK/ SS1        (Demo board schematics 
 P0.1: MRST_1_2 SSC1             |   MISO1   / Disp_A 
 P0.2: CCPOS2_1 / MTSR_1 SSC1    |   MOSI1   / I2C SDA / Pull down (Page 124 User manual) / Disp_B
 P0.3: SCK_1 SSC1 / CCPOS0_1     |   SCK_1   / I2C SDC / Disp_I    
-P0.4: MRST_1_0 SSC1 / CCPOS1_1  |   HALL_2
+P0.4: MRST_1_0 SSC1 / CCPOS1_1  |   HALL_1
         
 P1.0: SCK_2 SSC2                |   SCK2
 P1.1: MTSR_2 SSC2               |   MOSI2
 P1.2: MRST_2_0 SSC2 / CCPOS2_2  |   MISO2
-P1.3: CCPOS0_2                  |   HALL_1
-P1.4: CCPOS1_2 / MRST_1_3 SSC1  |   SS2
+P1.3: CCPOS0_2                  |   SS2
+P1.4: CCPOS1_2 / MRST_1_3 SSC1  |   HALL_2
 
 P2.0: CCPOS0_3                  |   ENC_A   
-P2.2: CCPOS2_3                  |   HALL_3
-P2.3: CCPOS1_0                  |   TEMP
+P2.2: CCPOS2_3                  |   TEMP
+P2.3: CCPOS1_0                  |   HALL_3
 P2.4: MRST_1_1 SSC1             |   ENC_B
 P2.5: MRST_2_1 SSC2             |   Disp_Ao
 
