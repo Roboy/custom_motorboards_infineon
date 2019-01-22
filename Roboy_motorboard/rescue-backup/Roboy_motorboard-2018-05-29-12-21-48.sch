@@ -1,21 +1,54 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:custom
 LIBS:Roboy_motorboard-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
-Title "Roboy Motor Controller Board"
-Date "2018-06-26"
-Rev "A"
-Comp "Roboy"
-Comment1 "Luis Vergara"
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L custom:TLE9879QX U1
+L TLE9879QX U1
 U 1 1 59B97B59
 P 5850 3450
 F 0 "U1" H 5300 4550 60  0000 C CNN
@@ -26,7 +59,7 @@ F 3 "" H 5850 2700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:GND-power1 #PWR01
+L GND #PWR01
 U 1 1 59B97C1C
 P 5850 4750
 F 0 "#PWR01" H 5850 4500 50  0001 C CNN
@@ -64,7 +97,7 @@ F3 "GND_LIN" I R 10050 3500 60
 F4 "H1" I L 8550 2600 60 
 F5 "H2" I L 8550 2700 60 
 F6 "H3" I L 8550 2800 60 
-F7 "Vdd_Ext_En" I R 10050 3900 60 
+F7 "Vdd_Ext" I R 10050 3900 60 
 F8 "SCK2" I L 8550 3600 60 
 F9 "MISO2" I L 8550 3800 60 
 F10 "MOSI2" I L 8550 3700 60 
@@ -78,19 +111,18 @@ F17 "MISO1/DispA" I L 8550 3100 60
 F18 "MOSI1/SDA/DispB" I L 8550 3200 60 
 F19 "SWCLK/SS1/LED" I R 10050 2600 60 
 F20 "DispAo" I L 8550 3400 60 
-F21 "Vdd_Ext" I R 10050 3750 50 
 $EndSheet
 Text GLabel 5650 1450 1    60   Input ~ 0
 VCP
 Text GLabel 5850 1450 1    60   Input ~ 0
 VS
 $Comp
-L Roboy_motorboard-rescue:R-device1 R3
+L R R3
 U 1 1 59B9B86E
 P 5050 2000
 F 0 "R3" V 5130 2000 50  0000 C CNN
 F 1 "1k" V 5050 2000 50  0000 C CNN
-F 2 "Roboy_mod:The_0402_FP" V 4980 2000 50  0001 C CNN
+F 2 "Resistors_SMD:R_0402" V 4980 2000 50  0001 C CNN
 F 3 "" H 5050 2000 50  0001 C CNN
 	1    5050 2000
 	0    1    1    0   
@@ -98,29 +130,29 @@ $EndComp
 Text GLabel 4300 1550 0    60   Input ~ 0
 VDH
 $Comp
-L Roboy_motorboard-rescue:C-device1 C7
+L C C7
 U 1 1 59B9B931
 P 5050 1800
 F 0 "C7" V 5100 1850 50  0000 L CNN
 F 1 "220n" V 4950 1850 50  0000 L CNN
-F 2 "Roboy_mod:The_0402_FP" H 5088 1650 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0402" H 5088 1650 50  0001 C CNN
 F 3 "" H 5050 1800 50  0001 C CNN
 	1    5050 1800
 	0    1    1    0   
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:R-device1 R2
+L R R2
 U 1 1 59B9B969
 P 5050 1550
 F 0 "R2" V 5130 1550 50  0000 C CNN
 F 1 "2" V 5050 1550 50  0000 C CNN
-F 2 "Roboy_mod:The_0402_FP" V 4980 1550 50  0001 C CNN
+F 2 "Resistors_SMD:R_0402" V 4980 1550 50  0001 C CNN
 F 3 "" H 5050 1550 50  0001 C CNN
 	1    5050 1550
 	0    1    1    0   
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:C-device1 C6
+L C C6
 U 1 1 59B9BCC0
 P 5050 1250
 F 0 "C6" H 5075 1350 50  0000 L CNN
@@ -131,7 +163,7 @@ F 3 "" H 5050 1250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:GND-power1 #PWR02
+L GND #PWR02
 U 1 1 59B9BD5D
 P 4700 1300
 F 0 "#PWR02" H 4700 1050 50  0001 C CNN
@@ -142,23 +174,23 @@ F 3 "" H 4700 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:C-device1 C4
+L C C4
 U 1 1 59B9C0E7
 P 4700 2600
 F 0 "C4" V 4850 2650 50  0000 L CNN
 F 1 "220n" V 4850 2400 50  0000 L CNN
-F 2 "Roboy_mod:The_0402_FP" H 4738 2450 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0402" H 4738 2450 50  0001 C CNN
 F 3 "" H 4700 2600 50  0001 C CNN
 	1    4700 2600
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:C-device1 C5
+L C C5
 U 1 1 59B9C139
 P 4700 2800
 F 0 "C5" V 4600 2850 50  0000 L CNN
 F 1 "220n" V 4600 2550 50  0000 L CNN
-F 2 "Roboy_mod:The_0402_FP" H 4738 2650 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0402" H 4738 2650 50  0001 C CNN
 F 3 "" H 4700 2800 50  0001 C CNN
 	1    4700 2800
 	0    -1   -1   0   
@@ -180,12 +212,12 @@ $EndSheet
 Text Notes 2550 1650 0    60   ~ 0
 VDH\nVCP\nVS\nGND
 $Comp
-L Roboy_motorboard-rescue:R-device1 R1
+L R R1
 U 1 1 59B9FAD7
 P 4700 3150
 F 0 "R1" V 4780 3150 50  0000 C CNN
 F 1 "1k" V 4700 3150 50  0000 C CNN
-F 2 "Roboy_mod:The_0402_FP" V 4630 3150 50  0001 C CNN
+F 2 "Resistors_SMD:R_0402" V 4630 3150 50  0001 C CNN
 F 3 "" H 4700 3150 50  0001 C CNN
 	1    4700 3150
 	0    1    1    0   
@@ -193,40 +225,40 @@ $EndComp
 Text GLabel 4300 3150 0    60   Input ~ 0
 VS
 $Comp
-L Roboy_motorboard-rescue:C-device1 C3
+L C C3
 U 1 1 59B9FEFA
 P 4450 3700
 F 0 "C3" V 4350 3750 50  0000 L CNN
 F 1 "1n" V 4350 3550 50  0000 L CNN
-F 2 "Roboy_mod:The_0402_FP" H 4488 3550 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0402" H 4488 3550 50  0001 C CNN
 F 3 "" H 4450 3700 50  0001 C CNN
 	1    4450 3700
 	1    0    0    -1  
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:C-device1 C2
+L C C2
 U 1 1 59B9FF71
 P 4250 3700
 F 0 "C2" V 4150 3750 50  0000 L CNN
 F 1 "1n" V 4150 3550 50  0000 L CNN
-F 2 "Roboy_mod:The_0402_FP" H 4288 3550 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0402" H 4288 3550 50  0001 C CNN
 F 3 "" H 4250 3700 50  0001 C CNN
 	1    4250 3700
 	1    0    0    -1  
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:C-device1 C1
+L C C1
 U 1 1 59BA0005
 P 4050 3700
 F 0 "C1" V 3950 3750 50  0000 L CNN
 F 1 "1n" V 3950 3550 50  0000 L CNN
-F 2 "Roboy_mod:The_0402_FP" H 4088 3550 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0402" H 4088 3550 50  0001 C CNN
 F 3 "" H 4050 3700 50  0001 C CNN
 	1    4050 3700
 	1    0    0    -1  
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:GND-power1 #PWR03
+L GND #PWR03
 U 1 1 59BA012C
 P 4250 4000
 F 0 "#PWR03" H 4250 3750 50  0001 C CNN
@@ -237,14 +269,14 @@ F 3 "" H 4250 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:C-device1 C8
+L C C8
 U 1 1 59BA13B8
-P 6650 1550
-F 0 "C8" H 6675 1650 50  0000 L CNN
-F 1 "330n" H 6675 1450 50  0000 L CNN
-F 2 "Roboy_mod:The_0402_FP" H 6688 1400 50  0001 C CNN
-F 3 "" H 6650 1550 50  0001 C CNN
-	1    6650 1550
+P 6350 1550
+F 0 "C8" H 6375 1650 50  0000 L CNN
+F 1 "330n" H 6375 1450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6388 1400 50  0001 C CNN
+F 3 "" H 6350 1550 50  0001 C CNN
+	1    6350 1550
 	0    1    1    0   
 $EndComp
 Text Label 4700 3550 0    60   ~ 0
@@ -284,7 +316,7 @@ OP1
 Text Label 3150 3800 2    60   ~ 0
 OP2
 $Comp
-L Roboy_motorboard-rescue:PWR_FLAG-power1 #FLG04
+L PWR_FLAG #FLG04
 U 1 1 59BB3444
 P 9700 850
 F 0 "#FLG04" H 9700 925 50  0001 C CNN
@@ -295,7 +327,7 @@ F 3 "" H 9700 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:PWR_FLAG-power1 #FLG05
+L PWR_FLAG #FLG05
 U 1 1 59BB34C7
 P 10100 850
 F 0 "#FLG05" H 10100 925 50  0001 C CNN
@@ -310,51 +342,51 @@ VDH
 Text GLabel 10100 1000 3    60   Input ~ 0
 VS
 $Comp
-L Roboy_motorboard-rescue:C-device1 C9
+L C C9
 U 1 1 59BB91A2
-P 6650 1750
-F 0 "C9" H 6675 1850 50  0000 L CNN
-F 1 "330n" H 6675 1650 50  0000 L CNN
-F 2 "Roboy_mod:The_0402_FP" H 6688 1600 50  0001 C CNN
-F 3 "" H 6650 1750 50  0001 C CNN
-	1    6650 1750
+P 6350 1750
+F 0 "C9" H 6375 1850 50  0000 L CNN
+F 1 "330n" H 6375 1650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6388 1600 50  0001 C CNN
+F 3 "" H 6350 1750 50  0001 C CNN
+	1    6350 1750
 	0    1    1    0   
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:C-device1 C10
+L C C10
 U 1 1 59BB9231
-P 6650 1950
-F 0 "C10" H 6675 2050 50  0000 L CNN
-F 1 "330n" H 6675 1850 50  0000 L CNN
-F 2 "Roboy_mod:The_0402_FP" H 6688 1800 50  0001 C CNN
-F 3 "" H 6650 1950 50  0001 C CNN
-	1    6650 1950
+P 6350 1950
+F 0 "C10" H 6375 2050 50  0000 L CNN
+F 1 "330n" H 6375 1850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6388 1800 50  0001 C CNN
+F 3 "" H 6350 1950 50  0001 C CNN
+	1    6350 1950
 	0    1    1    0   
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:C-device1 C12
+L C C12
 U 1 1 59BBA79A
 P 7550 2750
 F 0 "C12" V 7450 2800 50  0000 L CNN
 F 1 "1n" V 7450 2600 50  0000 L CNN
-F 2 "Roboy_mod:The_0402_FP" H 7588 2600 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0402" H 7588 2600 50  0001 C CNN
 F 3 "" H 7550 2750 50  0001 C CNN
 	1    7550 2750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:C-device1 C11
+L C C11
 U 1 1 59BBAA56
 P 6950 4450
 F 0 "C11" V 6850 4500 50  0000 L CNN
 F 1 "100n" V 6850 4300 50  0000 L CNN
-F 2 "Roboy_mod:The_0402_FP" H 6988 4300 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0402" H 6988 4300 50  0001 C CNN
 F 3 "" H 6950 4450 50  0001 C CNN
 	1    6950 4450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:SW_Push-switches1 SW1
+L SW_Push SW1
 U 1 1 59BBC64B
 P 7900 2800
 F 0 "SW1" H 7950 2900 50  0000 L CNN
@@ -405,11 +437,11 @@ RST
 Text Label 8050 2550 2    60   ~ 0
 RST
 Text Label 8300 2600 0    60   ~ 0
-P1.3
-Text Label 8300 2700 0    60   ~ 0
 P0.4
+Text Label 8300 2700 0    60   ~ 0
+P1.4
 Text Label 8300 2800 0    60   ~ 0
-P2.2
+P2.3
 Text Label 8300 3600 0    60   ~ 0
 P1.0
 Text Label 8300 3700 0    60   ~ 0
@@ -417,11 +449,11 @@ P1.1
 Text Label 8300 3800 0    60   ~ 0
 P1.2
 Text Label 8300 3900 0    60   ~ 0
-P1.4
-Text Label 6700 2250 2    60   ~ 0
-Vdd_Ext_En
-Text Label 10600 3900 2    60   ~ 0
-Vdd_Ext_En
+P1.3
+Text Label 6150 1950 3    60   ~ 0
+Vdd_Ext
+Text Label 10450 3900 2    60   ~ 0
+Vdd_Ext
 Text Label 10300 3000 2    60   ~ 0
 P2.0
 Text Label 10300 3100 2    60   ~ 0
@@ -433,29 +465,29 @@ P0.1
 Text Label 8300 3200 0    60   ~ 0
 P0.2
 $Comp
-L Roboy_motorboard-rescue:R-device1 R4
+L R R4
 U 1 1 59BE1759
 P 7200 4250
 F 0 "R4" V 7280 4250 50  0000 C CNN
 F 1 "10k" V 7200 4250 50  0000 C CNN
-F 2 "Roboy_mod:The_0402_FP" V 7130 4250 50  0001 C CNN
+F 2 "Resistors_SMD:R_0402" V 7130 4250 50  0001 C CNN
 F 3 "" H 7200 4250 50  0001 C CNN
 	1    7200 4250
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:Thermistor_PTC-device1 TH1
+L Thermistor_PTC TH1
 U 1 1 59BE1B58
 P 7650 4250
 F 0 "TH1" V 7490 4250 50  0000 C CNN
 F 1 "Thermistor_PTC" V 7770 4250 50  0000 C CNN
-F 2 "Roboy_mod:The_0402_FP" H 7700 4050 50  0001 L CNN
+F 2 "Resistors_SMD:R_0402" H 7700 4050 50  0001 L CNN
 F 3 "" H 7650 4250 50  0001 C CNN
 	1    7650 4250
 	0    1    1    0   
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:PWR_FLAG-power1 #FLG06
+L PWR_FLAG #FLG06
 U 1 1 59BE988A
 P 9300 850
 F 0 "#FLG06" H 9300 925 50  0001 C CNN
@@ -466,7 +498,7 @@ F 3 "" H 9300 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:GND-power1 #PWR07
+L GND #PWR07
 U 1 1 59BE99A1
 P 9300 1000
 F 0 "#PWR07" H 9300 750 50  0001 C CNN
@@ -479,29 +511,29 @@ $EndComp
 Text Label 8300 3400 0    60   ~ 0
 P2.5
 $Comp
-L Roboy_motorboard-rescue:R-device1 R25
+L R R25
 U 1 1 5A00886E
 P 7150 2950
 F 0 "R25" V 7230 2950 50  0000 C CNN
 F 1 "100k" V 7150 2950 50  0000 C CNN
-F 2 "Roboy_mod:The_0402_FP" V 7080 2950 50  0001 C CNN
+F 2 "Resistors_SMD:R_0402" V 7080 2950 50  0001 C CNN
 F 3 "" H 7150 2950 50  0001 C CNN
 	1    7150 2950
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:R-device1 R24
+L R R24
 U 1 1 5A0089AE
 P 7150 2650
 F 0 "R24" V 7230 2650 50  0000 C CNN
 F 1 "100k" V 7150 2650 50  0000 C CNN
-F 2 "Roboy_mod:The_0402_FP" V 7080 2650 50  0001 C CNN
+F 2 "Resistors_SMD:R_0402" V 7080 2650 50  0001 C CNN
 F 3 "" H 7150 2650 50  0001 C CNN
 	1    7150 2650
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:GNDA-power1 #PWR08
+L GNDA #PWR08
 U 1 1 5A09F80C
 P 7300 4750
 F 0 "#PWR08" H 7300 4500 50  0001 C CNN
@@ -512,7 +544,7 @@ F 3 "" H 7300 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:GNDD-power1 #PWR09
+L GNDD #PWR09
 U 1 1 5A0A03BE
 P 7550 3050
 F 0 "#PWR09" H 7550 2800 50  0001 C CNN
@@ -523,18 +555,18 @@ F 3 "" H 7550 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:GNDD-power1 #PWR010
+L GNDD #PWR010
 U 1 1 5A0A0924
-P 6900 2000
-F 0 "#PWR010" H 6900 1750 50  0001 C CNN
-F 1 "GNDD" H 6900 1850 50  0000 C CNN
-F 2 "" H 6900 2000 50  0001 C CNN
-F 3 "" H 6900 2000 50  0001 C CNN
-	1    6900 2000
+P 6600 2000
+F 0 "#PWR010" H 6600 1750 50  0001 C CNN
+F 1 "GNDD" H 6600 1850 50  0000 C CNN
+F 2 "" H 6600 2000 50  0001 C CNN
+F 3 "" H 6600 2000 50  0001 C CNN
+	1    6600 2000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:GNDD-power1 #PWR011
+L GNDD #PWR011
 U 1 1 5A0A2006
 P 8900 1000
 F 0 "#PWR011" H 8900 750 50  0001 C CNN
@@ -545,7 +577,7 @@ F 3 "" H 8900 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:GNDA-power1 #PWR012
+L GNDA #PWR012
 U 1 1 5A0A20FE
 P 8500 1000
 F 0 "#PWR012" H 8500 750 50  0001 C CNN
@@ -556,7 +588,7 @@ F 3 "" H 8500 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:PWR_FLAG-power1 #FLG013
+L PWR_FLAG #FLG013
 U 1 1 5A0A31F3
 P 8900 850
 F 0 "#FLG013" H 8900 925 50  0001 C CNN
@@ -567,7 +599,7 @@ F 3 "" H 8900 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Roboy_motorboard-rescue:PWR_FLAG-power1 #FLG014
+L PWR_FLAG #FLG014
 U 1 1 5A0A32F7
 P 8500 850
 F 0 "#FLG014" H 8500 925 50  0001 C CNN
@@ -586,16 +618,16 @@ Connection ~ 7300 4650
 Wire Wire Line
 	7300 4750 7300 4650
 Wire Wire Line
-	6700 4650 6950 4650
+	6700 4650 7950 4650
 Connection ~ 5850 4650
 Wire Wire Line
 	5850 4650 5850 4750
 Wire Wire Line
-	5700 4650 5800 4650
+	5700 4650 6000 4650
 Connection ~ 7350 2950
 Connection ~ 7550 2950
 Wire Wire Line
-	7300 2950 7350 2950
+	7300 2950 7550 2950
 Wire Wire Line
 	7350 2650 7350 2950
 Wire Wire Line
@@ -603,14 +635,23 @@ Wire Wire Line
 Wire Wire Line
 	8300 3400 8550 3400
 Wire Wire Line
+	10450 3500 10050 3500
+Wire Wire Line
 	10050 3400 10450 3400
 Wire Wire Line
 	9300 1000 9300 850 
+Wire Wire Line
+	6700 3950 6900 3950
+Connection ~ 7400 4250
+Wire Wire Line
+	7400 3850 7400 4250
 Connection ~ 6950 4650
 Wire Wire Line
 	7950 4650 7950 4250
 Wire Wire Line
 	7950 4250 7800 4250
+Wire Wire Line
+	7350 4250 7500 4250
 Connection ~ 6950 4250
 Wire Wire Line
 	8300 3200 8550 3200
@@ -623,7 +664,7 @@ Wire Wire Line
 Wire Wire Line
 	10300 3000 10050 3000
 Wire Wire Line
-	10050 3900 10600 3900
+	10050 3900 10450 3900
 Wire Wire Line
 	8300 3900 8550 3900
 Wire Wire Line
@@ -649,6 +690,8 @@ Wire Wire Line
 	6700 4150 6900 4150
 Wire Wire Line
 	6700 4050 6900 4050
+Wire Wire Line
+	6700 3850 7400 3850
 Wire Wire Line
 	6700 3750 6900 3750
 Wire Wire Line
@@ -681,27 +724,35 @@ Wire Wire Line
 Wire Wire Line
 	6950 4650 6950 4600
 Wire Wire Line
-	6700 4250 6950 4250
+	6700 4250 7050 4250
 Wire Wire Line
 	6950 4300 6950 4250
 Wire Wire Line
-	7550 2900 7550 2950
+	7550 2900 7550 3050
 Wire Wire Line
-	6700 2550 7550 2550
+	6700 2550 8050 2550
 Wire Wire Line
 	7550 2600 7550 2550
-Connection ~ 6900 1750
+Connection ~ 6600 1750
 Wire Wire Line
-	6800 1750 6900 1750
-Connection ~ 6900 1950
+	6500 1750 6600 1750
+Connection ~ 6600 1950
 Wire Wire Line
-	6900 1550 6800 1550
+	6600 1550 6500 1550
 Wire Wire Line
-	6900 1950 6800 1950
+	6600 1950 6500 1950
 Wire Wire Line
-	6900 1550 6900 1750
+	6600 1550 6600 2000
+Wire Wire Line
+	6150 1950 6200 1950
+Wire Wire Line
+	6150 2250 6150 1950
+Wire Wire Line
+	6050 1750 6200 1750
 Wire Wire Line
 	6050 2250 6050 1750
+Wire Wire Line
+	5950 1550 6200 1550
 Wire Wire Line
 	5950 2250 5950 1550
 Wire Wire Line
@@ -755,17 +806,17 @@ Wire Wire Line
 	4450 3900 4450 3850
 Connection ~ 4250 3900
 Wire Wire Line
-	4050 3900 4250 3900
+	4050 3900 4450 3900
 Wire Wire Line
 	4050 3850 4050 3900
 Wire Wire Line
-	4250 3850 4250 3900
+	4250 3850 4250 4000
 Wire Wire Line
 	4450 3450 5000 3450
 Wire Wire Line
-	4450 3450 4450 3500
+	4450 3450 4450 3550
 Wire Wire Line
-	4250 3350 4250 3400
+	4250 3350 4250 3550
 Wire Wire Line
 	5000 3350 4250 3350
 Wire Wire Line
@@ -773,7 +824,7 @@ Wire Wire Line
 Wire Wire Line
 	4850 3300 4850 3250
 Wire Wire Line
-	2950 3300 4050 3300
+	2950 3300 4850 3300
 Wire Wire Line
 	4050 3550 4050 3300
 Wire Wire Line
@@ -831,9 +882,9 @@ Connection ~ 4700 1800
 Wire Wire Line
 	4900 1800 4700 1800
 Wire Wire Line
-	4300 1550 4700 1550
+	4300 1550 4900 1550
 Wire Wire Line
-	4700 1550 4700 1800
+	4700 1550 4700 2000
 Wire Wire Line
 	4700 2000 4900 2000
 Wire Wire Line
@@ -841,248 +892,15 @@ Wire Wire Line
 Wire Wire Line
 	5200 2000 5550 2000
 Wire Wire Line
-	5650 1450 5650 1800
+	5650 1450 5650 2250
 Wire Wire Line
 	5200 1800 5650 1800
 Wire Wire Line
 	5750 1550 5750 2250
 Wire Wire Line
-	5200 1550 5250 1550
+	5200 1550 5750 1550
 Wire Wire Line
 	6700 4650 6700 4350
 Connection ~ 5800 4650
 Connection ~ 5900 4650
-Wire Wire Line
-	7550 3000 7550 3050
-Wire Wire Line
-	7300 4650 7950 4650
-Wire Wire Line
-	5850 4650 5900 4650
-Wire Wire Line
-	7350 2950 7550 2950
-Wire Wire Line
-	7550 2950 7550 3000
-Wire Wire Line
-	6950 4650 7300 4650
-Wire Wire Line
-	6950 4250 7050 4250
-Wire Wire Line
-	7900 2550 8050 2550
-Wire Wire Line
-	7550 2550 7900 2550
-Wire Wire Line
-	6900 1750 6900 1950
-Wire Wire Line
-	6900 1950 6900 2000
-Wire Wire Line
-	4450 3500 4450 3550
-Wire Wire Line
-	4250 3400 4250 3550
-Wire Wire Line
-	4050 3300 4850 3300
-Wire Wire Line
-	4250 3900 4450 3900
-Wire Wire Line
-	4250 3900 4250 4000
-Wire Wire Line
-	5650 1800 5650 2250
-Wire Wire Line
-	5250 1550 5750 1550
-Wire Wire Line
-	4700 1550 4900 1550
-Wire Wire Line
-	4700 1800 4700 2000
-Wire Wire Line
-	5800 4650 5850 4650
-Wire Wire Line
-	5900 4650 6000 4650
-$Comp
-L Roboy_motorboard-rescue:Mounting_Hole_PAD-Mechanical MK1
-U 1 1 5A7FDAEB
-P 8350 5700
-F 0 "MK1" H 8450 5751 50  0000 L CNN
-F 1 "M2" H 8450 5660 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 8350 5700 50  0001 C CNN
-F 3 "" H 8350 5700 50  0001 C CNN
-	1    8350 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Roboy_motorboard-rescue:Mounting_Hole_PAD-Mechanical MK2
-U 1 1 5A7FDDCC
-P 8700 5700
-F 0 "MK2" H 8800 5751 50  0000 L CNN
-F 1 "M2" H 8800 5660 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 8700 5700 50  0001 C CNN
-F 3 "" H 8700 5700 50  0001 C CNN
-	1    8700 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Roboy_motorboard-rescue:Mounting_Hole_PAD-Mechanical MK3
-U 1 1 5A7FDE18
-P 9050 5700
-F 0 "MK3" H 9150 5751 50  0000 L CNN
-F 1 "M2" H 9150 5660 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 9050 5700 50  0001 C CNN
-F 3 "" H 9050 5700 50  0001 C CNN
-	1    9050 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Roboy_motorboard-rescue:Mounting_Hole_PAD-Mechanical MK4
-U 1 1 5A7FDE62
-P 9400 5700
-F 0 "MK4" H 9500 5751 50  0000 L CNN
-F 1 "M2" H 9500 5660 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 9400 5700 50  0001 C CNN
-F 3 "" H 9400 5700 50  0001 C CNN
-	1    9400 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Roboy_motorboard-rescue:GND-power1 #PWR04
-U 1 1 5A7FDF95
-P 8900 5950
-F 0 "#PWR04" H 8900 5700 50  0001 C CNN
-F 1 "GND" H 8900 5800 50  0000 C CNN
-F 2 "" H 8900 5950 50  0001 C CNN
-F 3 "" H 8900 5950 50  0001 C CNN
-	1    8900 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8900 5950 8900 5900
-Wire Wire Line
-	8900 5900 8700 5900
-Wire Wire Line
-	8350 5900 8350 5800
-Wire Wire Line
-	8700 5800 8700 5900
-Connection ~ 8700 5900
-Wire Wire Line
-	8700 5900 8350 5900
-Wire Wire Line
-	8900 5900 9050 5900
-Wire Wire Line
-	9400 5900 9400 5800
-Connection ~ 8900 5900
-Wire Wire Line
-	9050 5800 9050 5900
-Connection ~ 9050 5900
-Wire Wire Line
-	9050 5900 9400 5900
-$Comp
-L Roboy_motorboard-rescue:GND-power1 #PWR013
-U 1 1 5B1FE6B2
-P 7150 5800
-F 0 "#PWR013" H 7150 5550 50  0001 C CNN
-F 1 "GND" H 7150 5650 50  0000 C CNN
-F 2 "" H 7150 5800 50  0001 C CNN
-F 3 "" H 7150 5800 50  0001 C CNN
-	1    7150 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Roboy_motorboard-rescue:GNDD-power1 #PWR014
-U 1 1 5B1FE6EF
-P 7950 5800
-F 0 "#PWR014" H 7950 5550 50  0001 C CNN
-F 1 "GNDD" H 7950 5650 50  0000 C CNN
-F 2 "" H 7950 5800 50  0001 C CNN
-F 3 "" H 7950 5800 50  0001 C CNN
-	1    7950 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP1
-U 1 1 5B27D07B
-P 7550 5650
-F 0 "JP1" H 7550 5914 50  0000 C CNN
-F 1 "Jumper" H 7550 5823 50  0000 C CNN
-F 2 "custom_lib:Star_Ground_2Port" H 7550 5650 50  0001 C CNN
-F 3 "" H 7550 5650 50  0001 C CNN
-	1    7550 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 5800 7150 5650
-Wire Wire Line
-	7150 5650 7250 5650
-Wire Wire Line
-	7850 5650 7950 5650
-Wire Wire Line
-	7950 5650 7950 5800
-Wire Wire Line
-	10050 3500 10450 3500
-$Comp
-L Device:Net-Tie_2 NT1
-U 1 1 5B24D706
-P 6800 5650
-F 0 "NT1" H 6800 5828 50  0000 C CNN
-F 1 "Net-Tie_2" H 6800 5737 50  0000 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 6800 5650 50  0001 C CNN
-F 3 "" H 6800 5650 50  0001 C CNN
-	1    6800 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6900 5650 7150 5650
-Connection ~ 7150 5650
-$Comp
-L Roboy_motorboard-rescue:GNDA-power1 #PWR035
-U 1 1 5B25753F
-P 6450 5800
-F 0 "#PWR035" H 6450 5550 50  0001 C CNN
-F 1 "GNDA" H 6450 5650 50  0000 C CNN
-F 2 "" H 6450 5800 50  0001 C CNN
-F 3 "" H 6450 5800 50  0001 C CNN
-	1    6450 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6450 5800 6450 5650
-Wire Wire Line
-	6450 5650 6700 5650
-Wire Wire Line
-	7350 4250 7400 4250
-Wire Wire Line
-	7400 4250 7400 3950
-Wire Wire Line
-	6700 3950 7400 3950
-Connection ~ 7400 4250
-Wire Wire Line
-	7400 4250 7500 4250
-Wire Wire Line
-	6700 3850 6900 3850
-Wire Wire Line
-	6150 2250 6150 1950
-Wire Wire Line
-	6150 1950 6500 1950
-Wire Wire Line
-	6050 1750 6500 1750
-Wire Wire Line
-	5950 1550 6500 1550
-Wire Wire Line
-	6700 2250 6150 2250
-Connection ~ 6150 2250
-Text Label 10400 3750 2    50   ~ 0
-Vdd_Ext
-Wire Wire Line
-	10400 3750 10050 3750
-Text Label 10500 1200 1    50   ~ 0
-Vdd_Ext
-$Comp
-L Roboy_motorboard-rescue:PWR_FLAG-power1 #FLG0101
-U 1 1 5BFA909D
-P 10500 850
-F 0 "#FLG0101" H 10500 925 50  0001 C CNN
-F 1 "PWR_FLAG" H 10500 1000 50  0000 C CNN
-F 2 "" H 10500 850 50  0001 C CNN
-F 3 "" H 10500 850 50  0001 C CNN
-	1    10500 850 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10500 1200 10500 850 
 $EndSCHEMATC

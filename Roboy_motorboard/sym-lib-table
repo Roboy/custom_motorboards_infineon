@@ -31,4 +31,5 @@
   (lib (name atmel1)(type Legacy)(uri "C:/Program Files/KiCad/share/kicad/library/atmel.lib")(options "")(descr ""))
   (lib (name contrib1)(type Legacy)(uri "C:/Program Files/KiCad/share/kicad/library/contrib.lib")(options "")(descr ""))
   (lib (name valves1)(type Legacy)(uri "C:/Program Files/KiCad/share/kicad/library/valves.lib")(options "")(descr ""))
+  (lib (name Roboy_motorboard-rescue)(type Legacy)(uri ${KIPRJMOD}/Roboy_motorboard-rescue.lib)(options "")(descr ""))
 )
