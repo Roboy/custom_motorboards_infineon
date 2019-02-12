@@ -28,12 +28,12 @@ $EndComp
 $Comp
 L Roboy_motorboard-rescue:GND-power1 #PWR01
 U 1 1 59B97C1C
-P 5850 4750
-F 0 "#PWR01" H 5850 4500 50  0001 C CNN
-F 1 "GND" H 5850 4600 50  0000 C CNN
-F 2 "" H 5850 4750 50  0001 C CNN
-F 3 "" H 5850 4750 50  0001 C CNN
-	1    5850 4750
+P 5700 4850
+F 0 "#PWR01" H 5700 4600 50  0001 C CNN
+F 1 "GND" H 5700 4700 50  0000 C CNN
+F 2 "" H 5700 4850 50  0001 C CNN
+F 3 "" H 5700 4850 50  0001 C CNN
+	1    5700 4850
 	1    0    0    -1  
 $EndComp
 $Sheet
@@ -587,11 +587,6 @@ Wire Wire Line
 	7300 4750 7300 4650
 Wire Wire Line
 	6700 4650 6950 4650
-Connection ~ 5850 4650
-Wire Wire Line
-	5850 4650 5850 4750
-Wire Wire Line
-	5700 4650 5800 4650
 Connection ~ 7350 2950
 Connection ~ 7550 2950
 Wire Wire Line
@@ -850,14 +845,10 @@ Wire Wire Line
 	5200 1550 5250 1550
 Wire Wire Line
 	6700 4650 6700 4350
-Connection ~ 5800 4650
-Connection ~ 5900 4650
 Wire Wire Line
 	7550 3000 7550 3050
 Wire Wire Line
 	7300 4650 7950 4650
-Wire Wire Line
-	5850 4650 5900 4650
 Wire Wire Line
 	7350 2950 7550 2950
 Wire Wire Line
@@ -892,10 +883,6 @@ Wire Wire Line
 	4700 1550 4900 1550
 Wire Wire Line
 	4700 1800 4700 2000
-Wire Wire Line
-	5800 4650 5850 4650
-Wire Wire Line
-	5900 4650 6000 4650
 $Comp
 L Roboy_motorboard-rescue:Mounting_Hole_PAD-Mechanical MK1
 U 1 1 5A7FDAEB
@@ -1085,4 +1072,31 @@ F 3 "" H 10500 850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10500 1200 10500 850 
+$Comp
+L Roboy_motorboard-rescue:GNDD-power1 #PWR?
+U 1 1 5C675AB2
+P 5900 4850
+F 0 "#PWR?" H 5900 4600 50  0001 C CNN
+F 1 "GNDD" H 5900 4700 50  0000 C CNN
+F 2 "" H 5900 4850 50  0001 C CNN
+F 3 "" H 5900 4850 50  0001 C CNN
+	1    5900 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4850 5900 4650
+Wire Wire Line
+	5700 4850 5700 4800
+Wire Wire Line
+	5800 4650 5800 4800
+Wire Wire Line
+	5800 4800 5700 4800
+Connection ~ 5700 4800
+Wire Wire Line
+	5700 4800 5700 4650
+Wire Wire Line
+	5800 4800 6000 4800
+Wire Wire Line
+	6000 4800 6000 4650
+Connection ~ 5800 4800
 $EndSCHEMATC
