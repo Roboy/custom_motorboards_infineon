@@ -1202,7 +1202,7 @@ U 1 1 5C649153
 P 4450 1600
 F 0 "U2" H 4550 1750 50  0000 C CNN
 F 1 "LM2903" H 4600 1400 50  0000 C CNN
-F 2 "" H 4450 1600 50  0001 C CNN
+F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 4450 1600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 4450 1600 50  0001 C CNN
 	1    4450 1600
 	1    0    0    -1  
@@ -1213,7 +1213,7 @@ U 2 1 5C649D1A
 P 4450 2400
 F 0 "U2" H 4500 2550 50  0000 C CNN
 F 1 "LM2903" H 4650 2150 50  0000 C CNN
-F 2 "" H 4450 2400 50  0001 C CNN
+F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 4450 2400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 4450 2400 50  0001 C CNN
 	2    4450 2400
 	1    0    0    -1  
@@ -1224,7 +1224,7 @@ U 3 1 5C649DE2
 P 4450 1600
 F 0 "U2" H 4150 1950 50  0000 L CNN
 F 1 "LM2903" H 4450 1400 50  0000 L CNN
-F 2 "" H 4450 1600 50  0001 C CNN
+F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 4450 1600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 4450 1600 50  0001 C CNN
 	3    4450 1600
 	1    0    0    -1  
