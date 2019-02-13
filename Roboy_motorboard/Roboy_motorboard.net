@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/luis/Roboy/Custom_Motorboards/Roboy_motorboard/Roboy_motorboard.sch)
-    (date "Wed 13 Feb 2019 03:47:02 CET")
+    (date "Wed 13 Feb 2019 06:33:15 CET")
     (tool "Eeschema 5.0.2-bee76a0~70~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -897,7 +897,7 @@
       (tstamp 59BEFCF2))
     (comp (ref F1)
       (value Fuse_Small)
-      (footprint Resistors_SMD:R_0805)
+      (footprint Fuse:Fuse_1206_3216Metric)
       (libsource (lib Roboy_motorboard-rescue) (part Fuse_Small-device1) (description ""))
       (sheetpath (names "/Power in/") (tstamps /59B97D2A/))
       (tstamp 59F7F184))
